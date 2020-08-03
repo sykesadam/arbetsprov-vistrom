@@ -1,0 +1,16 @@
+@import "components/carousel";
+@import "components/newsletter";
+@import "components/social-media";
+@import "components/accordion";
+
+@import "base/reset";
+@import "base/variables";
+
+@import "layout/nav";
+@import "layout/content";
+@import "layout/morefrom";
+@import "layout/footer";
+
+body {
+	font-family: sans-serif;
+}

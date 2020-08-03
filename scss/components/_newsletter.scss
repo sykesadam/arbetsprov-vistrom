@@ -1,0 +1,70 @@
+.newsletter {
+	background: url("./Material/optimerade/newsletter_bg.jpg");
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 4rem 7vw 2rem;
+	padding: 1rem;
+	overflow: hidden;
+}
+
+.newsletter:before {
+	content: "";
+	position: absolute;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.newsletter__text {
+	z-index: 2;
+	color: #ebebec;
+	width: 25%;
+	text-align: center;
+	line-height: 2rem;
+}
+
+.newsletter__text h2 {
+	font-size: 2rem;
+	margin: 0 0 2rem;
+	text-transform: uppercase;
+}
+
+.newsletter__input {
+	z-index: 2;
+	font-size: 1.2rem;
+}
+
+.newsletter__input input {
+	padding: 2vw;
+	background: #ffffff;
+	border: none;
+	text-transform: uppercase;
+}
+
+.newsletter__input button {
+	padding: 2vw 1rem;
+	background: #141526;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+	.newsletter {
+		height: auto;
+		flex-direction: column;
+	}
+	.newsletter__text {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+}

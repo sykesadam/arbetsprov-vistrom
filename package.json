@@ -1,0 +1,16 @@
+{
+	"name": "arbetsprov-frontend",
+	"version": "1.0.0",
+	"description": "arbetsprov för viström",
+	"main": "script.js",
+	"scripts": {
+		"build-css": "node-sass --include-path scss scss/main.scss styles.css",
+		"watch-css": "nodemon -e scss -x \"npm run build-css\""
+	},
+	"author": "me",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^4.14.1",
+		"nodemon": "^2.0.4"
+	}
+}

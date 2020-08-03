@@ -1,0 +1,23 @@
+.social-media {
+	background: #f1f1f1;
+	position: relative;
+	padding: 3rem 10vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social-media button {
+	background: none;
+	border: 2px solid black;
+	padding: 2vw 0;
+	font-size: 1.1rem;
+	cursor: pointer;
+	text-transform: uppercase;
+	flex-grow: 1;
+	margin-bottom: 0.25rem;
+}
+
+.social-media button:not(:last-child) {
+	margin-right: 0.25rem;
+}
