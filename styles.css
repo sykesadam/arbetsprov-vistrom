@@ -343,7 +343,9 @@ table {
 .mobile-links li {
   width: 33%;
   box-sizing: border-box;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  background: #f1f1f1;
+  margin: 0.5rem; }
 
 nav a {
   text-decoration: none;
@@ -397,7 +399,7 @@ nav a {
 
 @media screen and (max-width: 400px) {
   .mobile-links li {
-    width: 50%; } }
+    width: 80%; } }
 
 @media screen and (min-width: 900px) {
   .mobile-items {
