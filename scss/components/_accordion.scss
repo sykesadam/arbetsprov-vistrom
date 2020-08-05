@@ -25,18 +25,16 @@
 .accordion__item h3 {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .accordion__item-content {
 	display: none;
-	padding: 1rem 0;
+	padding: 1rem 0 4rem;
 	text-align: left;
 	font-weight: 700;
 	text-transform: none;
 }
-
-@media screen and (max-width: 1220px) {
-	.accordion {
-		margin: 1rem 2rem;
-	}
+.fa-angle-down {
+	font-size: 1.5rem;
 }

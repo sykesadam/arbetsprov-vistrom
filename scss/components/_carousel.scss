@@ -1,21 +1,23 @@
-.product__carousel {
-	max-width: 60vw;
-	overflow-x: hidden;
-	display: flex;
+.carousel {
 	position: relative;
+	margin: 0 auto;
+}
+.product__carousel {
+	max-width: 55vw;
+	max-height: 1000px;
+	overflow: hidden;
+	display: flex;
 }
 
 .product-image {
 	min-width: 100%;
+	z-index: -1;
+	display: flex;
 }
 
 .product-image img {
 	width: 100%;
-	object-fit: contain;
-}
-
-.carousel {
-	position: relative;
+	object-fit: cover;
 }
 
 .carousel-item.selected {
@@ -37,12 +39,4 @@
 	background: rgba(255, 255, 255, 0.8);
 	border-radius: 100%;
 	cursor: pointer;
-}
-
-@media screen and (max-width: 1220px) {
-	.product__carousel {
-		max-width: 100vw;
-		height: 500px;
-		overflow-y: hidden;
-	}
 }

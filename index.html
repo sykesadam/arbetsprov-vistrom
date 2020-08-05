@@ -2,12 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Hackett shirt Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum"
+		/>
+		<meta name="keywords" content="Hackett, Shirt, Oxford" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div class="top-links">
 				<div class="information">
 					<h2>Fri frakt & fria returer</h2>
@@ -25,7 +30,7 @@
 					<li><a href="#">Dam</a></li>
 					<li><a href="#">Märken</a></li>
 					<li><a href="#">Rea</a></li>
-					<li class="logo"><a href="#">LOGO</a></li>
+					<li class="logo-item"><a href="#" class="logo">LOGO</a></li>
 					<li><a href="#">Sök</a></li>
 					<li><a href="#">Lista(2)</a></li>
 					<li>
@@ -44,19 +49,21 @@
 						LOGO
 					</a>
 					<a class="cart">
-						(2)<i class="fas fa-shopping-cart"></i>
+						<i class="fas fa-shopping-cart"></i>
 					</a>
 				</div>
 				<div class="hamburger__links">
-					<ul>
-						<li><input type="text" placeholder="Sök" /></li>
-						<li><a href="#">Lista(2)</a></li>
+					<div class="mobile-search">
+						<input type="text" placeholder="Sök" />
+					</div>
+					<ul class="mobile-links">
+						<li><a href="#">Lista (2)</a></li>
 						<li><a href="#">Herr</a></li>
 						<li><a href="#">Dam</a></li>
-						<li><a href="#">Märker</a></li>
+						<li><a href="#">Märken</a></li>
 						<li><a href="#">Rea</a></li>
 					</ul>
-					<div class="links">
+					<div class="mobile-account-links">
 						<a href="#">Blogg</a>
 						<a href="#">Mitt konto</a>
 						<a href="#">Kundstjänst</a>
@@ -159,49 +166,69 @@
 			<section class="more-products">
 				<div class="more-products-title">
 					<h3>Mer från hacket london</h3>
-					<a href="#">Se alla hacket produkter ></a>
+					<a href="#" class="more-products__see-all">
+						Se alla hacket produkter
+						<i class="fas fa-chevron-right"></i>
+					</a>
 				</div>
 				<div class="more-products-items">
 					<article class="more-products-item">
-						<div class="special">Nyhet</div>
-						<img
-							src="Material/optimerade/SS16_HM401415_951_01_thumb.jpg"
-							alt="Vest"
-						/>
-						<h4>Hacket London</h4>
-						<p>Hacket Garment Dyed Oxford Slim Fit Shirt White</p>
-						<h5>999 kr</h5>
+						<div class="image-container">
+							<div class="special new">Nyhet</div>
+							<img
+								src="Material/optimerade/SS16_HM401415_951_01_thumb.jpg"
+								alt="Vest"
+							/>
+						</div>
+
+						<h4 class="more-products-item__make">Hacket London</h4>
+						<p class="more-products-item__name">
+							Hacket Garment Dyed Oxford Slim Fit Shirt White
+						</p>
+						<h5 class="more-products-item__price">999 kr</h5>
 					</article>
 					<article class="more-products-item">
-						<div class="special">Kampanj</div>
-						<img
-							src="Material/optimerade/SS16_HM441696_869_01_thumb.jpg"
-							alt="Vest"
-						/>
-						<h4>Hacket London</h4>
-						<p>Hacket Garment Dyed Oxford Slim Fit Shirt White</p>
-						<h5>
+						<div class="image-container">
+							<div class="special campaign">Kampanj</div>
+							<img
+								src="Material/optimerade/SS16_HM441696_869_01_thumb.jpg"
+								alt="Vest"
+							/>
+						</div>
+						<h4 class="more-products-item__make">Hacket London</h4>
+						<p class="more-products-item__name">
+							Hacket Garment Dyed Oxford Slim Fit Shirt White
+						</p>
+						<h5 class="more-products-item__price">
 							<span class="old-prize">999kr</span>
-							<span class="discounted-prize">999 kr</span>
+							<span class="discounted-prize">799 kr</span>
 						</h5>
 					</article>
 					<article class="more-products-item">
-						<img
-							src="Material/optimerade/SS16_HM401400_561_01_thumb.jpg"
-							alt="Vest"
-						/>
-						<h4>Hacket London</h4>
-						<p>Hacket Garment Dyed Oxford Slim Fit Shirt White</p>
-						<h5>999 kr</h5>
+						<div class="image-container">
+							<img
+								src="Material/optimerade/SS16_HM401400_561_01_thumb.jpg"
+								alt="Vest"
+							/>
+						</div>
+						<h4 class="more-products-item__make">Hacket London</h4>
+						<p class="more-products-item__name">
+							Hacket Garment Dyed Oxford Slim Fit Shirt White
+						</p>
+						<h5 class="more-products-item__price">999 kr</h5>
 					</article>
 					<article class="more-products-item">
-						<img
-							src="Material/optimerade/SS16_HM550478_595_01_thumb.jpg"
-							alt="Vest"
-						/>
-						<h4>Hacket London</h4>
-						<p>Hacket Garment Dyed Oxford Slim Fit Shirt White</p>
-						<h5>999 kr</h5>
+						<div class="image-container">
+							<img
+								src="Material/optimerade/SS16_HM550478_595_01_thumb.jpg"
+								alt="Vest"
+							/>
+						</div>
+						<h4 class="more-products-item__make">Hacket London</h4>
+						<p class="more-products-item__name">
+							Hacket Garment Dyed Oxford Slim Fit Shirt White
+						</p>
+						<h5 class="more-products-item__price">999 kr</h5>
 					</article>
 				</div>
 			</section>
@@ -219,15 +246,15 @@
 				<button>Skicka</button>
 			</div>
 		</section>
-		<section class="social-media">
+		<section class="btn-group">
 			<button>Facebook</button>
 			<button>Instagram</button>
 			<button>Nyhetsbrev</button>
 		</section>
-		<footer>
+		<footer class="footer">
 			<div class="footer-links">
-				<div class="footer--left">
-					<div>
+				<div class="footer-links--left">
+					<div class="link-group footer-links__shop">
 						<h2>Shop</h2>
 						<ul>
 							<li><a href="#">Herr</a></li>
@@ -236,7 +263,7 @@
 							<li><a href="#">Rea</a></li>
 						</ul>
 					</div>
-					<div>
+					<div class="link-group footer-links__service">
 						<h2>Kundservice</h2>
 						<ul>
 							<li><a href="#">Order</a></li>
@@ -246,7 +273,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="footer--right">
+				<div class="footer-links--right">
 					<h2>Kontakt</h2>
 					<div class="contact">
 						<ul>
@@ -254,7 +281,6 @@
 							<li>TEL: 0700 00 00 00</li>
 							<li>E-POST: info@foretaget.se</li>
 						</ul>
-
 						<ul>
 							<li><h3>Viström Webb AB</h3></li>
 							<li>Kungsgatan 9</li>
@@ -264,17 +290,22 @@
 				</div>
 			</div>
 			<div class="footer-text">
-				<p>
+				<p class="footer-text--description">
 					<b
 						>Detta är lite text som beskriver företaget för
 						sökmotorer vilket resulterar i att vi rankar högre.</b
 					>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Cupiditate velit voluptas est maxime neque odio facere sequi
-					ipsam, itaque quibusdam officiis asperiores molestiae ullam
+					ipsam, itaque quibusdam officiis Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. Cupiditate velit voluptas est
+					odio facere sequi ipsam, itaque quibusdam officiis Lorem
+					ipsum dolor sit amet consectetur adipisicing elit.
+					Cupiditate velit voluptas est maxime neque odio facere sequi
+					ipsam, itaque quibusdam officiisasperiores molestiae ullam
 					excepturi eaque doloribus. Omnis, voluptates magni?
 				</p>
-				<p class="copyright">
+				<p class="footer-text--copyright">
 					Viström webb AV C 2017. Alla rättigheter reserverade
 				</p>
 			</div>

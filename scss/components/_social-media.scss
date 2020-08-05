@@ -1,16 +1,15 @@
-.social-media {
+.btn-group {
 	background: #f1f1f1;
-	position: relative;
-	padding: 3rem 10vw;
+	padding: 3rem 7rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.social-media button {
+.btn-group button {
 	background: none;
 	border: 2px solid black;
-	padding: 2vw 0;
+	padding: 1rem 0;
 	font-size: 1.1rem;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -18,6 +17,12 @@
 	margin-bottom: 0.25rem;
 }
 
-.social-media button:not(:last-child) {
-	margin-right: 0.25rem;
+.btn-group button:not(:last-child) {
+	margin-right: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.btn-group {
+		padding: 3rem 2rem;
+	}
 }
