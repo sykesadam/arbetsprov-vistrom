@@ -543,8 +543,8 @@ nav a {
 .more-products-item {
   text-align: center;
   font-size: 0.9rem;
-  flex-grow: 1;
-  min-width: 300px; }
+  max-width: 300px;
+  flex-grow: 1; }
 
 .more-products-item__make {
   text-transform: uppercase;
@@ -598,10 +598,6 @@ nav a {
 @media screen and (max-width: 1000px) {
   .container {
     padding: 2rem 2rem 0; } }
-
-@media screen and (max-width: 1811px) {
-  .more-products-item {
-    flex-grow: 0; } }
 
 @media screen and (max-width: 1365px) {
   .more-products-item:not(:last-child) {
