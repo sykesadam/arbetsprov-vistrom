@@ -539,14 +539,11 @@ nav a {
 
 .more-products-items {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
+  justify-content: space-evenly; }
 
 .more-products-item {
   text-align: center;
-  font-size: 0.9rem;
-  max-width: 300px;
-  flex-grow: 1; }
+  font-size: 0.9rem; }
 
 .more-products-item__make {
   text-transform: uppercase;
@@ -603,7 +600,9 @@ nav a {
 
 @media screen and (max-width: 1365px) {
   .more-products-item:not(:last-child) {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .more-products-items {
+    flex-wrap: wrap; } }
 
 .footer {
   background: #000;

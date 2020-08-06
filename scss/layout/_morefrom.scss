@@ -26,14 +26,13 @@
 .more-products-items {
 	display: flex;
 	justify-content: space-evenly;
-	flex-wrap: wrap;
 }
 
 .more-products-item {
 	text-align: center;
 	font-size: 0.9rem;
-	max-width: 300px;
-	flex-grow: 1;
+	// max-width: 350px;
+	// flex-grow: 1;
 }
 
 .more-products-item__make {
@@ -105,5 +104,8 @@
 @media screen and (max-width: 1365px) {
 	.more-products-item:not(:last-child) {
 		margin-right: 0;
+	}
+	.more-products-items {
+		flex-wrap: wrap;
 	}
 }
